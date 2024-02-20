@@ -1,5 +1,5 @@
 from tkinter import Tk, Button, Label, Canvas, PhotoImage, Menu, messagebox
-from bitmap.ImageLoader import ImageLoader, FileFormatError
+from openbmp.ImageLoader import ImageLoader, FileFormatError
 from tkinter.filedialog import askopenfilename
 import numpy as np
 import matplotlib.pyplot as plt

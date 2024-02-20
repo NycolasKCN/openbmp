@@ -1,5 +1,6 @@
-from BitmapImage import BitmapImage
+from openbmp.BitmapImage import BitmapImage
 import os
+
 
 class ImageLoader:
     def load_image(file_path) -> BitmapImage:
@@ -30,10 +31,13 @@ class ImageLoader:
             
             pixel_index = 0
             row_index = image.height - 1
+            padding = image.width % 4
             while True:
                 if pixel_index == image.width:
                     pixel_index = 0
                     row_index -= 1
+                    
+                    file.read(padding)
                     
                     if row_index == -1:
                         break
