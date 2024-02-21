@@ -2,6 +2,11 @@
 
 O programa **OpenBMP** é uma ferramente simples para visualização de imagens no formato Bitmap (.bmp)
 
+## Screenshots
+
+![Janela principal](./screeshots/MainMenu.png)
+![Imagem renderizada](./screeshots/ImageRender.png)
+
 
 ## Rodando localmente
 Para executar o programa, é necessário ter o **Python 3.11** ou uma versão mais recente instalada.
